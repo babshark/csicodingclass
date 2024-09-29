@@ -1,0 +1,174 @@
+body, header, nav, main, footer, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+nav {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.9em;
+    background-color: #2a1f14; 
+    text-align: center; 
+    font-weight: bold; 
+    width: 100%; 
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px; 
+}
+
+nav li a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: #3a2818;
+}
+
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+/* Baby hawk image (larger screen) */
+.baby-hawk {
+    display: block;
+}
+
+/* Mobile header (h1 and h3) */
+.mobile-header {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .baby-hawk {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav {
+        padding: 5px 0; 
+    }
+
+    nav ul {
+        padding: 0; 
+    }
+
+    nav li {
+        display: block; /* Stack nav items vertically */
+        border-bottom: 1px solid #f6eee4; /* 1px line between items */
+        margin: 0; /* Remove margin */
+    }
+
+    nav li:last-child {
+        border-bottom: none; /* Remove the border from the last item */
+    }
+
+    nav li a {
+        display: block; /* Make the link fill the entire list item */
+        padding: 10px; /* Padding for better touch target */
+        text-align: center; /* Center the text */
+        background-color: #2a1f14; /* Match the nav background */
+    }
+
+    main {
+        padding: 5%; /* Increase padding for better readability */
+    }
+
+    main p {
+        font-size: 1.1em; /* Slightly smaller text for mobile */
+    }
+
+    main h3 {
+        padding-top: 1%;
+    }
+
+    .action {
+        font-size: 1.5em; /* Smaller action text */
+    }
+}
+
+/* Optional: Mobile styles for smaller screens */
+@media (max-width: 480px) {
+    nav li {
+        font-size: 0.9em; /* Smaller font size for mobile */
+    }
+
+    main p {
+        font-size: 1em; /* Smaller paragraph text */
+    }
+
+    footer {
+        font-size: 0.75em; /* Smaller footer text */
+    }
+}
